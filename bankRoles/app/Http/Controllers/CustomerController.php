@@ -10,7 +10,19 @@ class CustomerController extends Controller
         return 'Listar todos';
     }
 
-    public function show(){
-        return'Crear 
+    public function show($id){
+        return 'Mostrar un cliente'; 
+    }
+
+    public function store(Request $request){
+        return ' crear un cliente';
+    }
+
+    public function update(Request $request){
+        return 'Actualizar un cliente';
+    }
+
+    public function destroy($id){
+     return 'Eliminar un cliente';   
     }
 }
